@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="326.0" prefWidth="329.0" styleClass="bck" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Rename">
+   <children>
+      <TextField fx:id="renameF" layoutX="90.0" layoutY="138.0" prefHeight="34.0" prefWidth="156.0" promptText="New Name" />
+      <Button layoutX="71.0" layoutY="217.0" mnemonicParsing="false" onAction="#renameOther" prefHeight="31.0" prefWidth="72.0" text="Save" textFill="#008461">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Label fx:id="error" layoutX="43.0" layoutY="34.0" prefHeight="43.0" prefWidth="267.0" />
+      <Button layoutX="199.0" layoutY="217.0" mnemonicParsing="false" onAction="#cancel" prefHeight="31.0" prefWidth="72.0" text="Cancel" textFill="#008461">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

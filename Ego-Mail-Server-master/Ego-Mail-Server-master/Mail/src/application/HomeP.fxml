@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane fx:id="root1" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1358.0" style="-fx-border-width: 4; -fx-border-color: #000000; -fx-border-radius: 5;" styleClass="bodybg" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerMain">
+	<children>
+		<Button layoutX="14.0" layoutY="150.0" mnemonicParsing="false" onAction="#compose" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: #9b3e4f;" stylesheets="@application.css" text="Compose">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Button>
+		<Button fx:id="view1" layoutX="14.0" layoutY="205.0" mnemonicParsing="false" onAction="#viewEmailsInbox" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: #008461;" stylesheets="@application.css" text="Inbox">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Button>
+		<Button fx:id="view2" layoutX="14.0" layoutY="258.0" mnemonicParsing="false" onAction="#viewEmailsSent" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: #008461;" stylesheets="@application.css" text="Sent">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Button>
+		<Button fx:id="view3" layoutX="14.0" layoutY="308.0" mnemonicParsing="false" onAction="#viewEmailsTrash" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: #008461;" stylesheets="@application.css" text="Trash">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Button>
+		<Button fx:id="view4" layoutX="14.0" layoutY="363.0" mnemonicParsing="false" onAction="#viewEmailsDraft" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: #008461;" stylesheets="@application.css" text="Draft">
+			<font>
+				<Font name="System Bold Italic" size="20.0" />
+			</font>
+		</Button>
+		<Button fx:id="seemore" layoutX="781.0" layoutY="662.0" mnemonicParsing="false" onAction="#seeMore" prefHeight="31.0" prefWidth="60.0" style="-fx-background-color: #008461; -fx-border-radius: 3;" styleClass="txt2" stylesheets="@application.css" text="next&gt;&gt;" />
+		<Button fx:id="Previous" layoutX="704.0" layoutY="662.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="60.0" style="-fx-background-color: #008461; -fx-border-radius: 3;" styleClass="txt2" stylesheets="@application.css" text="&lt;&lt;Prev" />
+		<CheckBox fx:id="chk1" layoutX="184.0" layoutY="177.0" mnemonicParsing="false" onAction="#chkMulti1" prefHeight="50.0" prefWidth="0.0" visible="false">
+			<padding>
+				<Insets top="10.0" />
+			</padding>
+		</CheckBox>
+		<CheckBox fx:id="chk2" layoutX="185.0" layoutY="226.0" mnemonicParsing="false" onAction="#chkMulti2" prefHeight="50.0" prefWidth="28.0" visible="false">
+			<padding>
+				<Insets top="10.0" />
+			</padding>
+		</CheckBox>
+		<CheckBox fx:id="chk3" layoutX="185.0" layoutY="268.0" mnemonicParsing="false" onAction="#chkMulti3" prefHeight="50.0" prefWidth="28.0" visible="false">
+			<padding>
+				<Insets top="10.0" />
+			</padding>
+		</CheckBox>
+		<CheckBox fx:id="chk6" layoutX="184.0" layoutY="401.0" mnemonicParsing="false" onAction="#chkMulti6" prefHeight="50.0" prefWidth="28.0" visible="false">
+			<padding>
+				<Insets top="10.0" />
+			</padding>
+		</CheckBox>
+		<CheckBox fx:id="chk5" layoutX="184.0" layoutY="353.0" mnemonicParsing="false" onAction="#chkMulti5" prefHeight="50.0" prefWidth="11.0" visible="false">
+			<padding>
+				<Insets top="10.0" />
+			</padding>
+		</CheckBox>
+		<CheckBox fx:id="chk7" layoutX="184.0" layoutY="454.0" mnemonicParsing="false" onAction="#chkMulti7" prefHeight="50.0" prefWidth="28.0" visible="false">
+			<padding>
+				<Insets top="10.0" />
+			</padding>
+		</CheckBox>
+		<CheckBox fx:id="chk10" layoutX="184.0" layoutY="601.0" mnemonicParsing="false" onAction="#chkMulti10" prefHeight="50.0" prefWidth="0.0" visible="false">
+			<padding>
+				<Insets top="10.0" />
+			</padding>
+		</CheckBox>
+		<CheckBox fx:id="chk8" layoutX="184.0" layoutY="504.0" mnemonicParsing="false" onAction="#chkMulti8" prefHeight="50.0" prefWidth="28.0" visible="false">
+			<padding>
+				<Insets top="10.0" />
+			</padding>
+		</CheckBox>
+		<CheckBox fx:id="chk9" layoutX="184.0" layoutY="556.0" mnemonicParsing="false" onAction="#chkMulti9" prefHeight="51.0" prefWidth="28.0" visible="false">
+			<padding>
+				<Insets top="10.0" />
+			</padding>
+		</CheckBox>
+		<ListView fx:id="theViewList" layoutX="217.0" layoutY="182.0" prefHeight="472.0" prefWidth="627.0" styleClass="border" stylesheets="@application.css" />
+		<ComboBox fx:id="combo1" layoutX="450.0" layoutY="117.0" prefHeight="31.0" prefWidth="187.0" promptText="Search by" style="-fx-border-radius: 5; -fx-border-color: #9b3e4f; -fx-background-color: #008461;" styleClass="txt2" stylesheets="@application.css" />
+		<TextField fx:id="search" layoutX="450.0" layoutY="146.0" prefHeight="31.0" prefWidth="187.0" style="-fx-border-color: #9b3e4f; -fx-border-radius: 5; -fx-background-color: #e0dede;" styleClass="txt2" stylesheets="@application.css" />
+		<Button fx:id="GoSrearch" layoutX="637.0" layoutY="146.0" mnemonicParsing="false" onAction="#search" prefHeight="31.0" prefWidth="44.0" style="-fx-border-radius: 5; -fx-border-color: #9b3e4f; -fx-background-color: #008461;" styleClass="txt2" stylesheets="@application.css" text="Go" />
+		<CheckBox fx:id="chk4" layoutX="184.0" layoutY="323.0" mnemonicParsing="false" onAction="#chkMulti4" visible="false" />
+		<AnchorPane fx:id="pane" layoutX="853.0" layoutY="248.0" prefHeight="407.0" prefWidth="499.0" styleClass="border" stylesheets="@application.css" visible="false">
+			<children>
+				<TextField fx:id="t1" editable="false" layoutX="128.0" layoutY="7.0" prefHeight="31.0" prefWidth="150.0" visible="false" />
+				<TextField fx:id="t2" editable="false" layoutX="128.0" layoutY="47.0" prefHeight="31.0" prefWidth="150.0" visible="false" />
+				<TextField fx:id="t3" editable="false" layoutX="128.0" layoutY="85.0" prefHeight="31.0" prefWidth="150.0" visible="false" />
+				<Label fx:id="dateLabel" layoutX="34.0" layoutY="47.0" prefHeight="31.0" prefWidth="52.0" text="Subject :" visible="false">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font></Label>
+				<Label fx:id="fromLabel" layoutX="34.0" layoutY="8.0" prefHeight="31.0" prefWidth="52.0" text="From :" visible="false">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font></Label>
+				<Label fx:id="subjectLabel" layoutX="34.0" layoutY="85.0" prefHeight="31.0" prefWidth="75.0" text="Date :" visible="false">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font></Label>
+				<Label fx:id="bodylabel" layoutX="293.0" layoutY="117.0" prefHeight="41.0" prefWidth="67.0" text="The Body" visible="false" />
+				<Label fx:id="attlabel" layoutX="384.0" layoutY="122.0" prefHeight="31.0" prefWidth="100.0" text="Attachments" visible="false">
+					<font>
+						<Font size="17.0" />
+					</font>
+				</Label>
+            <TextField fx:id="t4" layoutX="130.0" layoutY="122.0" prefHeight="31.0" prefWidth="150.0" visible="false" />
+            <Label fx:id="h500" layoutX="34.0" layoutY="127.0" prefHeight="21.0" prefWidth="44.0" text="to" visible="false" />
+            <ComboBox fx:id="prio1" layoutX="349.0" layoutY="10.0" onAction="#setPriority" prefHeight="28.0" prefWidth="92.0" promptText="Priority" styleClass="txt2" stylesheets="@application.css" />
+            <Button fx:id="close" layoutX="471.0" layoutY="9.0" mnemonicParsing="false" onAction="#closeEmail" prefHeight="0.0" prefWidth="21.0" style="-fx-background-color: #961818;" text="X" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="System Bold Italic" size="7.0" />
+               </font>
+            </Button>
+            <Button fx:id="SendDraft" layoutX="413.0" layoutY="368.0" mnemonicParsing="false" onAction="#composeFromDraft" text="Send" visible="false">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="fav" layoutX="304.0" layoutY="9.0" mnemonicParsing="false" onAction="#starAction" prefHeight="28.0" prefWidth="36.0" styleClass="txt" stylesheets="@application.css" text="★" textFill="#c9bf30e8" visible="false">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+
+			</children>
+		</AnchorPane>
+		<ComboBox fx:id="combo3" editable="true" layoutX="216.0" layoutY="662.0" onAction="#multiAction" prefHeight="31.0" prefWidth="160.0" promptText="Select  ..... " style="-fx-background-color: #008461;" styleClass="txt2" stylesheets="@application.css" visible="false" />
+		<ComboBox fx:id="combo4" layoutX="394.0" layoutY="662.0" onAction="#moveAction" prefHeight="31.0" prefWidth="100.0" promptText="To" style="-fx-background-color: #008461;" styleClass="txt2" stylesheets="@application.css" visible="false" />
+		<Button fx:id="addNewFolder" layoutX="14.0" layoutY="569.0" mnemonicParsing="false" onAction="#viewAdd" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: #008461;" stylesheets="@application.css" text="New Folder">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+		<ComboBox fx:id="combo5" layoutX="14.0" layoutY="518.0" onAction="#openOtherFolder" prefHeight="40.0" prefWidth="160.0" promptText="Other Folders" style="-fx-background-color: #008461;" styleClass="txt" stylesheets="@application.css" />
+      <Button layoutX="14.0" layoutY="416.0" mnemonicParsing="false" onAction="#contacts" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: #008461;" stylesheets="@application.css" text="Contacts">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+      <Button layoutX="681.0" layoutY="145.0" mnemonicParsing="false" onAction="#setFilter" prefHeight="31.0" prefWidth="110.0" style="-fx-border-radius: 5; -fx-border-color: #9b3e4f; -fx-background-color: #008461;" styleClass="txt2" stylesheets="@application.css" text="Set A Filter" />
+      <ComboBox fx:id="comboFilter" layoutX="14.0" layoutY="468.0" onAction="#filteredFolders" prefHeight="40.0" prefWidth="160.0" promptText="Filtered Folders" style="-fx-background-color: #008461;" styleClass="txt" stylesheets="@application.css" />
+		<ComboBox fx:id="combo" layoutX="270.0" layoutY="148.0" onAction="#theSort" prefHeight="28.0" prefWidth="180.0" promptText="Sotr By :" style="-fx-border-radius: 5; -fx-border-color: #9b3e4f; -fx-background-color: #008461;" styleClass="txt2" stylesheets="@application.css" />
+      <Label layoutY="1.0" prefHeight="50.0" prefWidth="1358.0" styleClass="Text-Feild" stylesheets="@application.css" textFill="#eff8f2" />
+      <Button layoutX="23.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #9b3e4f; -fx-border-color: #000000; -fx-border-radius: 5;" styleClass="txt" stylesheets="@application.css" text="&lt;&lt; Back" />
+      <Button layoutX="1202.0" layoutY="10.0" mnemonicParsing="false" onAction="#signout" prefHeight="31.0" prefWidth="133.0" style="-fx-background-color: #9b3e4f; -fx-border-color: #000000; -fx-border-radius: 5;" styleClass="txt" stylesheets="@application.css" text="Signout" />
+      <Button fx:id="p" layoutX="1071.0" layoutY="10.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="110.0" style="-fx-background-color: #9b3e4f; -fx-border-color: #000000; -fx-border-radius: 5;" styleClass="txt" stylesheets="@application.css" text="My Profile" />
+      <Button fx:id="ref" layoutX="104.0" layoutY="14.0" mnemonicParsing="false" onAction="#refresh" style="-fx-background-color: #9b3e4f; -fx-border-color: #000000; -fx-border-radius: 5;" styleClass="txt" stylesheets="@application.css" text="refresh" />
+      <Button layoutX="14.0" layoutY="93.0" mnemonicParsing="false" onAction="#viewFavourites" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: #008461;" stylesheets="@application.css" text="Favourites">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+				<TextArea fx:id="emailBody" editable="false" layoutX="860.0" layoutY="368.0" prefHeight="234.0" prefWidth="334.0" visible="false" />
+				<ListView fx:id="attList" layoutX="1197.0" layoutY="368.0" prefHeight="234.0" prefWidth="144.0" visible="false" />
+      <ComboBox fx:id="comboDeleteFolder" layoutX="15.0" layoutY="626.0" onAction="#deleteOther" prefHeight="44.0" prefWidth="160.0" promptText="Delete A Folder" style="-fx-background-color: #008461;" styleClass="txt" stylesheets="@application.css" />
+      <Button fx:id="renameB" layoutX="517.0" layoutY="663.0" mnemonicParsing="false" onAction="#goRenam" prefHeight="28.0" prefWidth="83.0" style="-fx-background-color: #008461;" text="Rename" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+	</children>
+</AnchorPane>

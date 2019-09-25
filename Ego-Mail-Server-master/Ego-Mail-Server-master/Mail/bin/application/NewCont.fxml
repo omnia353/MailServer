@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="415.0" prefWidth="454.0" styleClass="bck" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NewContact">
+   <children>
+      <TextField fx:id="namef" layoutX="158.0" layoutY="62.0" prefHeight="42.0" prefWidth="203.0" stylesheets="@application.css" />
+      <TextField fx:id="namel" layoutX="158.0" layoutY="139.0" prefHeight="42.0" prefWidth="203.0" stylesheets="@application.css" />
+      <TextField fx:id="relation" layoutX="158.0" layoutY="209.0" prefHeight="42.0" prefWidth="203.0" stylesheets="@application.css" />
+      <TextField fx:id="email" layoutX="158.0" layoutY="283.0" prefHeight="42.0" prefWidth="203.0" stylesheets="@application.css" />
+      <Label layoutX="25.0" layoutY="58.0" prefHeight="50.0" prefWidth="100.0" styleClass="Contact" stylesheets="@application.css" text="First Name :" textFill="#008461">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="135.0" prefHeight="50.0" prefWidth="100.0" styleClass="Contact" stylesheets="@application.css" text="Last Name :" textFill="#008461">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="205.0" prefHeight="50.0" prefWidth="100.0" styleClass="Contact" stylesheets="@application.css" text="Relation :" textFill="#008461">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="279.0" prefHeight="50.0" prefWidth="120.0" styleClass="Contact" stylesheets="@application.css" text="Email address :" textFill="#008461">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="369.0" layoutY="292.0" mnemonicParsing="false" onAction="#addEmail" styleClass="signin" stylesheets="@application.css" text="Add email" textFill="#008461">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button layoutX="27.0" layoutY="365.0" mnemonicParsing="false" onAction="#addNewContact" prefHeight="31.0" prefWidth="88.0" styleClass="signin" stylesheets="@application.css" text="Save" textFill="#008461">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="error" layoutX="239.0" layoutY="343.0" prefHeight="57.0" prefWidth="175.0" textFill="#c30e0e" />
+      <Button layoutX="125.0" layoutY="365.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="31.0" prefWidth="88.0" styleClass="signin" stylesheets="@application.css" text="cancel" textFill="#008461">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

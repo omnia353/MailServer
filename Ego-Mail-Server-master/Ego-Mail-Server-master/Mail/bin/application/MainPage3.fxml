@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="pane" fx:id="pane" prefHeight="639.0" prefWidth="1026.0" style="-fx-background-color: #D7D3CB;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="180.0" layoutY="503.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: A9A59C;" text="Signin">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+      <Button layoutX="644.0" layoutY="503.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: A9A59C; -fx-region-border: 26px;" text="Signup">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="299.0" fitWidth="647.0" layoutX="260.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: darken;">
+         <image>
+            <Image url="@../../../../Documents/welcome.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

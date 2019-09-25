@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="289.0" prefWidth="276.0" styleClass="bck" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RemoveContact">
+   <children>
+      <ComboBox fx:id="combo" layoutX="51.0" layoutY="76.0" prefHeight="23.0" prefWidth="174.0" promptText="Contact's index" styleClass="txt" stylesheets="@application.css" />
+      <Button layoutX="74.0" layoutY="145.0" mnemonicParsing="false" onAction="#removeContact" styleClass="txt" stylesheets="@application.css" text="Remove contact" />
+      <Button layoutX="112.0" layoutY="208.0" mnemonicParsing="false" onAction="#cancel" text="Cancel">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

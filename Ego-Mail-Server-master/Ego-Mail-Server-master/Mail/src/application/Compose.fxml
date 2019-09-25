@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ComposeClass">
+   <top>
+      <AnchorPane prefHeight="679.0" prefWidth="547.0" styleClass="bck" stylesheets="@application.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="21.0" layoutY="62.0" text="To :" textFill="#008461">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <Label layoutX="23.0" layoutY="139.0" text="From :" textFill="#008461">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <Label layoutX="22.0" layoutY="224.0" text="Subject :" textFill="#008461">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <TextField fx:id="to" layoutX="57.0" layoutY="98.0" onAction="#compose" prefHeight="30.0" prefWidth="404.0" />
+            <TextField fx:id="from" editable="false" layoutX="60.0" layoutY="182.0" onAction="#compose" prefHeight="32.0" prefWidth="399.0" />
+            <TextField fx:id="sub" layoutX="57.0" layoutY="259.0" onAction="#compose" prefHeight="31.0" prefWidth="404.0" />
+            <Button layoutX="195.0" layoutY="527.0" mnemonicParsing="false" onAction="#attach" prefHeight="25.0" prefWidth="165.0" text="Add Attatchment" textFill="#008461">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font></Button>
+            <Button fx:id="btndraft" layoutX="70.0" layoutY="600.0" mnemonicParsing="false" onAction="#draft" prefHeight="42.0" prefWidth="147.0" text="Save to Drafts" textFill="#008461">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Button>
+            <Button fx:id="btnn" layoutX="328.0" layoutY="597.0" mnemonicParsing="false" onAction="#compose" prefHeight="45.0" prefWidth="147.0" text="Send" textFill="#008461">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Button>
+            <TextArea fx:id="body" layoutX="53.0" layoutY="314.0" onDragDetected="#compose" prefHeight="191.0" prefWidth="449.0" />
+            <Label fx:id="error" layoutX="124.0" layoutY="33.0" prefHeight="29.0" prefWidth="299.0" textFill="#900d0d">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

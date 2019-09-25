@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="304.0" prefWidth="354.0" styleClass="bck" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FilterSet">
+   <children>
+      <Label layoutX="59.0" layoutY="116.0" prefHeight="39.0" prefWidth="172.0" styleClass="txt3" stylesheets="@application.css" text="Folder Name :" textFill="#008461">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="14.0" prefHeight="48.0" prefWidth="288.0" styleClass="txt3" stylesheets="@application.css" text="Word To Be Filtered :" textFill="#008461">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameFilter" layoutX="93.0" layoutY="75.0" prefHeight="25.0" prefWidth="156.0" promptText="Sende's Name / Subject" stylesheets="@application.css" />
+      <TextField fx:id="nameFolder" layoutX="93.0" layoutY="171.0" prefHeight="25.0" prefWidth="156.0" stylesheets="@application.css" />
+      <Button layoutX="17.0" layoutY="255.0" mnemonicParsing="false" onAction="#setFilter" prefHeight="25.0" prefWidth="84.0" stylesheets="@application.css" text="Set filter">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="error" layoutX="141.0" layoutY="208.0" prefHeight="39.0" prefWidth="202.0" textFill="#a10d0d">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="112.0" layoutY="256.0" mnemonicParsing="false" onAction="#cancel" text="Cancel">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

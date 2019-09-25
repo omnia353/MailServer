@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <center>
+      <AnchorPane prefHeight="700.0" prefWidth="659.0" styleClass="bck" stylesheets="@application.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="128.0" layoutY="82.0" styleClass="txt3" stylesheets="@application.css" text="First Name :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font></Label>
+            <Label layoutX="131.0" layoutY="146.0" prefHeight="42.0" prefWidth="153.0" styleClass="txt3" stylesheets="@application.css" text="Last Name :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font></Label>
+            <Label layoutX="130.0" layoutY="229.0" prefHeight="37.0" prefWidth="129.0" styleClass="txt3" stylesheets="@application.css" text="Gender :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font></Label>
+            <Label layoutX="132.0" layoutY="270.0" prefHeight="55.0" prefWidth="126.0" styleClass="txt3" stylesheets="@application.css" text="Birth Date :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font></Label>
+            <Label layoutX="133.0" layoutY="333.0" prefHeight="57.0" prefWidth="112.0" styleClass="txt3" stylesheets="@application.css" text="Email :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font></Label>
+            <ComboBox fx:id="combo1" layoutX="280.0" layoutY="218.0" prefHeight="44.0" prefWidth="290.0" promptText="Gender" stylesheets="@application.css">
+               <styleClass>
+                  <String fx:value="txt4" />
+                  <String fx:value="txt4" />
+               </styleClass></ComboBox>
+            <ComboBox fx:id="combo2" layoutX="280.0" layoutY="277.0" prefHeight="40.0" prefWidth="82.0" promptText="DD" styleClass="txt4" stylesheets="@application.css" />
+            <ComboBox fx:id="combo3" layoutX="371.0" layoutY="277.0" prefHeight="39.0" prefWidth="81.0" promptText="MM" styleClass="txt4" stylesheets="@application.css" />
+            <ComboBox fx:id="combo4" layoutX="464.0" layoutY="278.0" prefHeight="37.0" prefWidth="108.0" promptText="YYYY" styleClass="txt4" stylesheets="@application.css" />
+            <Label layoutX="133.0" layoutY="397.0" prefHeight="41.0" prefWidth="134.0" styleClass="txt3" stylesheets="@application.css" text="Password :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font></Label>
+            <TextField fx:id="kk" layoutX="277.0" layoutY="82.0" onAction="#generate" prefHeight="44.0" prefWidth="292.0" promptText="First Name" styleClass="txt4" stylesheets="@application.css" />
+            <TextField fx:id="t2" layoutX="278.0" layoutY="142.0" onAction="#generate" prefHeight="49.0" prefWidth="293.0" promptText="Second Name" styleClass="txt4" stylesheets="@application.css" />
+            <TextField fx:id="t3" layoutX="281.0" layoutY="337.0" onAction="#generate" prefHeight="49.0" prefWidth="289.0" promptText="Email" styleClass="txt4" stylesheets="@application.css" />
+            <TextField fx:id="t4" layoutX="281.0" layoutY="403.0" onAction="#generate" prefHeight="47.0" prefWidth="289.0" promptText="Not less than 8 characters" styleClass="txt4" stylesheets="@application.css" />
+            <Button layoutX="130.0" layoutY="538.0" mnemonicParsing="false" onAction="#generate" prefHeight="59.0" prefWidth="441.0" style="-fx-background-color: #008461;" stylesheets="@application.css" text="SignUp" textFill="#bf9e9e">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></Button>
+            <Label layoutX="130.0" layoutY="475.0" prefHeight="46.0" prefWidth="174.0" styleClass="txt3" stylesheets="@application.css" text="Profile-Picture :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font></Label>
+            <Button fx:id="btn" layoutX="282.0" layoutY="473.0" mnemonicParsing="false" onAction="#profilepic" prefHeight="44.0" prefWidth="288.0" styleClass="txt4" stylesheets="@application.css" text="Select Image" />
+            <Label fx:id="lblerror" layoutX="78.0" layoutY="610.0" prefHeight="66.0" prefWidth="518.0" stylesheets="@application.css" textAlignment="CENTER" textFill="#b51010">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="572.0" layoutY="341.0" prefHeight="41.0" prefWidth="137.0" stylesheets="@application.css" text="\@E-go.com" textFill="#f8f5f5">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+            <Button fx:id="back" layoutX="28.0" layoutY="14.0" mnemonicParsing="false" onAction="#backSignup" stylesheets="@application.css" text="&lt;&lt; Back" textFill="#008461" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

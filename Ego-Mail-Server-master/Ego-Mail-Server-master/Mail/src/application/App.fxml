@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="460.0" prefWidth="400.0" styleClass="bck" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label layoutX="22.0" layoutY="143.0" style="-fx-font-weight: bold;" stylesheets="@application.css" text="Email :" textFill="#ffffffa3">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="230.0" style="-fx-effect: innershadow; -fx-font-weight: bold;" stylesheets="@application.css" text="Password :" textFill="#ffffffa3">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email" layoutX="143.0" layoutY="139.0" prefHeight="40.0" prefWidth="204.0" promptText="email address" style="-fx-border-style: solid; -fx-border-color: #4C8740; -fx-border-image-width: 5;" styleClass="txt4" stylesheets="@application.css" />
+      <PasswordField fx:id="password" layoutX="143.0" layoutY="221.0" prefHeight="40.0" prefWidth="204.0" promptText="password" style="-fx-border-style: solid; -fx-border-color: #4C8740; -fx-border-image-width: 5;" styleClass="txt4" stylesheets="@application.css" />
+      <Button fx:id="login" layoutX="99.0" layoutY="324.0" mnemonicParsing="false" onAction="#log" prefHeight="48.0" prefWidth="188.0" style="-fx-border-color: # 4C8740; -fx-border-image-width: 5; -fx-background-color: #008461;" stylesheets="@application.css" text="Login" textFill="#a8b2af9e">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Button>
+      <Label fx:id="status" alignment="TOP_CENTER" layoutX="99.0" layoutY="84.0" prefHeight="32.0" prefWidth="230.0" textFill="#e11e1e">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Button layoutX="28.0" layoutY="25.0" mnemonicParsing="false" onAction="#back" text="&lt;&lt;Back" textFill="#008461" />
+      <ImageView blendMode="LIGHTEN" fitHeight="70.0" fitWidth="143.0" layoutX="279.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/31949310_1704437159605287_1332315081605644288_n.jpg" />
+         </image>
+      </ImageView>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

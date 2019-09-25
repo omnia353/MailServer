@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="415.0" prefWidth="454.0" styleClass="bck" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditContact">
+   <children>
+      <TextField fx:id="namefEdit" layoutX="158.0" layoutY="62.0" prefHeight="42.0" prefWidth="203.0" />
+      <TextField fx:id="namelEdit" layoutX="158.0" layoutY="139.0" prefHeight="42.0" prefWidth="203.0" />
+      <TextField fx:id="relationEdit" layoutX="158.0" layoutY="209.0" prefHeight="42.0" prefWidth="203.0" />
+      <TextField fx:id="emailEdit" layoutX="158.0" layoutY="283.0" prefHeight="42.0" prefWidth="203.0" />
+      <Label layoutX="25.0" layoutY="58.0" prefHeight="50.0" prefWidth="100.0" text="First Name :" textFill="#008461">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="135.0" prefHeight="50.0" prefWidth="100.0" text="Last Name :" textFill="#008461">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="205.0" prefHeight="50.0" prefWidth="100.0" text="Relation :" textFill="#008461">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="279.0" prefHeight="50.0" prefWidth="120.0" text="Email address :" textFill="#008461">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="369.0" layoutY="292.0" mnemonicParsing="false" onAction="#insertEmail" styleClass="signin" stylesheets="@application.css" text="Add Email" />
+      <Button layoutX="25.0" layoutY="354.0" mnemonicParsing="false" onAction="#editContact" prefHeight="33.0" prefWidth="67.0" styleClass="signin" stylesheets="@application.css" text="Save">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="error" layoutX="242.0" layoutY="347.0" prefHeight="57.0" prefWidth="175.0" textFill="#c30e0e" />
+      <Button layoutX="345.0" layoutY="336.0" mnemonicParsing="false" onAction="#removeEmail" styleClass="signin" stylesheets="@application.css" text="Remove Email" />
+      <ComboBox fx:id="combo" layoutX="220.0" layoutY="14.0" onAction="#chooseContact" prefHeight="33.0" prefWidth="141.0" promptText="Contact's index" styleClass="txt2" stylesheets="@application.css" />
+      <Button layoutX="116.0" layoutY="354.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="33.0" prefWidth="59.0" styleClass="signin" stylesheets="@application.css" text="Cancel">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane fx:id="newFolderRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="315.0" prefWidth="351.0" styleClass="bck" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainFolder">
+   <children>
+      <TextField fx:id="folderName" layoutX="71.0" layoutY="127.0" prefHeight="31.0" prefWidth="210.0" promptText="Add The New Folder's Name" />
+      <Button fx:id="chkLikedFolder" layoutX="83.0" layoutY="209.0" mnemonicParsing="false" onAction="#chkListOfNewFolders" prefHeight="31.0" prefWidth="81.0" text="Create" textFill="#008461">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font></Button>
+      <Label fx:id="warning1" layoutX="59.0" layoutY="46.0" prefHeight="31.0" prefWidth="232.0" />
+      <Button layoutX="196.0" layoutY="209.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" textFill="#008461">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

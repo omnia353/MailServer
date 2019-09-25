@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1366.0" styleClass="fPage" stylesheets="@../../bin/application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main1">
+   <children>
+      <ImageView blendMode="MULTIPLY" fitHeight="314.0" fitWidth="650.0" layoutX="409.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Documents/welcome.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="292.0" layoutY="522.0" mnemonicParsing="false" onAction="#Signup" prefHeight="60.0" prefWidth="200.0" styleClass="fr" stylesheets="@application.css" text="Signup" textFill="#0e170c">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Button>
+      <Button fx:id="signin" layoutX="907.0" layoutY="515.0" mnemonicParsing="false" onAction="#Signin" prefHeight="60.0" prefWidth="200.0" styleClass="fr" stylesheets="@application.css" text="Signin" textFill="#101b0d">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Button>
+      <Button layoutX="618.0" layoutY="519.0" mnemonicParsing="false" onAction="#Help" prefHeight="63.0" prefWidth="190.0" styleClass="fr" stylesheets="@application.css" text="Help" textFill="#1e1d1d">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

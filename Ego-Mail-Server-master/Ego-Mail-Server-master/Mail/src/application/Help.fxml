@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="794.0" prefWidth="608.0" styleClass="bck" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HelpControl">
+   <children>
+      <Button fx:id="button200" layoutX="39.0" layoutY="42.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="546.0" stylesheets="@application.css" text="Helping The Users With The Mail Server E-go">
+         <styleClass>
+            <String fx:value="bb" />
+            <String fx:value="bbt" />
+         </styleClass></Button>
+      <ListView fx:id="view" layoutX="39.0" layoutY="117.0" prefHeight="658.0" prefWidth="546.0" />
+   </children>
+</AnchorPane>
